@@ -1,0 +1,96 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+}
+
+input[type="submit"]:hover
+{
+    background-color: #00b8eb; 
+}
+
+header 
+{
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+header a 
+{
+    text-decoration: none;
+    color: #333;
+}
+
+/* BOTTÓN CON ANIMACIÓN */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.my-btn{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dis{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+.btn-fun{
+    height: 55px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid white;
+    box-shadow: 2px 2px 0px rgb(66, 195, 255);
+}
+
+.btn-fun:hover{
+    border: none;
+    box-shadow: none;
+}
+
+.btn-fun::before{
+    content: "";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-image: conic-gradient(rgb(66, 195, 255) 20deg, transparent 120deg);
+    border-radius: 50%;
+    animation: Animate 1s linear infinite;
+}
+
+@keyframes Animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.btn-fun::after{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 150px;
+    background-color: black;
+}
+
+.btn-fun:hover:after{
+    height: 50px;
+    width: 145px;
+}

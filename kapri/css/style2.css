@@ -1,0 +1,312 @@
+/* TABLA DE CONTENIDO
+
+	1. Import section
+	2. Estilos basicos
+	3. Header
+	4. Service Icons
+	5. Footer
+	6. Responsive
+
+*/
+
+
+
+/* 1. IMPORT SECTION */
+
+	@import url("bootstrap.min.css");
+	@import url("font-awesome.min.css");
+	@import url("http://fonts.googleapis.com/css?family=Lato:300,700,700italic&subset=latin,latin-ext");
+	@import url("http://fonts.googleapis.com/css?family=Raleway:300,700&subset=latin,latin-ext");
+
+
+
+
+/* 2. ESTILOS BASICOS */
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+		font: 16px/1.5 Lato, "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
+		background-color: #fff;
+		color: #262626;
+		font-weight: 300;
+
+		margin: 0;
+		padding: 0;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+
+	a { 
+		color: #262626;
+		transition: all 0.125s ease-in-out 0s;
+		-moz-transition: all 0.125s ease-in-out 0s;
+		-webkit-transition: all 0.125s ease-in-out 0s;
+		-o-transition: all 0.125s ease-in-out 0s;
+		-ms-transition: all 0.125s ease-in-out 0s;
+	}
+
+	a:hover {
+		color: #68c3a3;
+	}
+
+	a, a:hover, a:active, a:focus {
+		outline: 0;
+		border: 0;
+		text-decoration: none;
+	}
+
+	#st-preloader {
+		background: #FFF;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 9999;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	#pre-status,
+	.preload-placeholder {
+		background-image: url(../images/preloader.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 40px;
+		left: 50%;
+		margin: -20px 0 0 -20px;
+		position: absolute;
+		top: 50%;
+		width: 40px;
+	}
+
+	.preload-placeholder {
+		background: none;
+		left: 0;
+		margin: 0;
+		text-align: center;
+		top: 65%;
+	}
+
+	.btn-inicio {
+		padding: 10px;
+		color: #fff;
+		background: #42c3ff;
+		width: 330px;
+		margin: 20px auto;
+		margin-top: 0;
+		border: 0;
+		border-radius: 3px;
+		cursor: pointer;
+	} 
+
+/* 3. HEADER */
+
+	.st-header{
+		position: relative;
+		background-image: url(../imgs/diario_azul.jpg);
+
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.header-overlay{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.st-header-content{
+		padding-top: 12%;
+	} 
+
+	.st-header-title{
+		color: #42c3ff;
+		padding-top: 40px;
+	}
+
+	.st-header-title h2{
+		font-size: 56px;
+		margin-bottom: 20px;
+	}
+
+	.st-header-title h2 span{
+		font-weight: 700;
+		color: #42c3ff;
+	}
+
+	.st-header-title p{
+		color:#ffffff
+	}
+
+	.mouse-icon {
+		position: absolute;
+		left: 50%;
+		bottom: 40px;
+		border: 2px solid #fff;
+		border-radius: 16px;
+		height: 50px;
+		width: 30px;
+		margin-left: -17px;
+		display: block;
+		z-index: 10;
+	}
+
+	.mouse-icon:hover, .mouse-icon:active, .mouse-icon:focus{
+		border: 2px solid #fff;
+	}
+
+	.mouse-icon .wheel {
+	    -webkit-animation-name: drop;
+	    -webkit-animation-duration: 1s;
+	    -webkit-animation-timing-function: linear;
+	    -webkit-animation-delay: 0s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-play-state: running;
+	    animation-name: drop;
+	    animation-duration: 1s;
+	    animation-timing-function: linear;
+	    animation-delay: 0s;
+	    animation-iteration-count: infinite;
+	    animation-play-state: running;
+	}
+
+	.mouse-icon .wheel {
+		position: relative;
+		border-radius: 10px;
+		background: #fff;
+		width: 4px;
+		height: 10px;
+		top: 4px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@-webkit-keyframes drop {
+	    0%   { top:5px;  opacity: 0;}
+	    30%  { top:10px; opacity: 1;}
+	    100% { top:25px; opacity: 0;}
+	}
+
+
+	@keyframes drop	{
+		0%   { top:5px;  opacity: 0;}
+		30%  { top:10px; opacity: 1;}
+		100% { top:25px; opacity: 0;}
+	}
+
+
+/* 4. SERVICE ICONS */
+
+	.service-icons{
+		background: #ffffff;
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	.st-service-box{
+		padding: 0 20px;
+	}
+	
+	.st-service-box span{
+		 font-size: 32px;
+		 color: #68c3a3;
+	}
+
+	.st-service-box h3{
+		font-family: 'Raleway';
+		font-size: 16px;
+		font-weight: 700;
+		color: #262626;
+		margin: 20px 0 0;
+
+	}
+
+	.st-service-box p{
+		font-size: 14px;
+		color: #262626;
+		margin: 20px 0 0;
+	}
+
+	.st-service-box a{
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 14px;
+		color: #262626;
+		display: inline-block;
+		margin: 20px 0 0;
+	}
+
+	.st-service-box a:hover{
+		color: #68c3a3;
+	}
+
+	.write{
+		background-color: #fff; 
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+
+	.write h2{
+		color: #ffffff;
+	}
+
+/* 7. FOOTER */
+
+	.footer{
+		background-color: #262626;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		color: rgba(255, 255, 255, 0.4);
+		align-items: end;
+	}
+
+	.footer a{
+		color: rgba(255, 255, 255, 0.4);
+	}
+
+	.footer a:hover{
+		color: #fff;
+	}
+
+	.copyright{
+		padding-left: 20px;
+	}
+
+	.copyright p{
+		margin: 0;
+	}
+
+	.social-icons{
+		padding-right: 20px;
+		text-align: right;
+	}
+
+	.social-icons a{
+		width: 28px;
+		display: inline-block;
+		height: 28px;
+		text-align: center;
+		line-height: 26px;
+		border-radius: 3px;
+		margin-left: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
